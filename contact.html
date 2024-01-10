@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url(./images/ford-mustang-2767124_1280.png); /* Replace 'background.jpg' with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-gap: 10px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <div class="background-image">
+            <form class="contact-form" action="./php/contact.php"  method="post">
+                <label for="name">Name</label>
+                <input type="text"  name=a >
+                
+                <label for="email">Email</label>
+                <input type="email"  name=b >
+
+                <label for="email">Telephone</label>
+                <input type="textnumber" id="telephone" name=c>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name=d rows="4" ></textarea>
+                
+                <button type="submit" name=t1>Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
